@@ -7,7 +7,7 @@ export type ClinicalSlice = {
   members: IMember[];
 };
 
-// TODO - This interface in incomplete
+// TODO - This interface is incomplete
 export interface IMember {
   name: {
     first: string;
