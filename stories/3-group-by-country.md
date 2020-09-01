@@ -4,7 +4,7 @@
 
 > As an Eleanor Health clinical staff person,
 
-> When I click "Member List" in Ops Hub,
+> When I am viewing my Member List,
 
 > I want to be able to see members grouped by country,
 

@@ -12,7 +12,7 @@
 
 ## Existing Behavior
 
-Member records are pulled from an API (https://randomuser.me). They are stored in redux in the `clinical` leaf.
+Member records are pulled from an API (https://randomuser.me). They are stored in redux in the `clinical` leaf. This represents your assigned caseload.
 
 The `MemberList` component receives an `Array<IMember>` prop, rendering the first and last name for each member.
 
