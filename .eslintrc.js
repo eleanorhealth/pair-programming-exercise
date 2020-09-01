@@ -10,6 +10,7 @@ module.exports = {
   plugins: ["prettier", "react"],
   rules: {
     "@typescript-eslint/quotes": ["error", "double"],
+    "@typescript-eslint/semi": "warn",
     "comma-dangle": [
       "warn",
       {
@@ -25,6 +26,6 @@ module.exports = {
       { html: "enforce", custom: "ignore" },
     ],
     "react/require-default-props": 0,
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
   },
 };

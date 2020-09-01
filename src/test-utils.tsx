@@ -7,7 +7,7 @@ import THEME from "theme";
 import rootReducer from "store/reducers";
 
 // Base wrapper for tests that covers the general requirements (theme and routing)
-export function BaseWrapper({ children }: { children: ReactNode }) {
+export function BaseWrapper({ children }: { children?: ReactNode }) {
   return (
     <ThemeProvider theme={THEME}>
       <MemoryRouter>{children}</MemoryRouter>

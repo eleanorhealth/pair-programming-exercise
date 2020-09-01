@@ -14,5 +14,10 @@ export interface IMember {
     last: string;
   };
   phone: string;
-  unreadMessageCount: number;
+  messages: IMessage[];
+}
+
+export interface IMessage {
+  id: string;
+  read: boolean;
 }

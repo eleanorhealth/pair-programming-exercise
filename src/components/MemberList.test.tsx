@@ -1,15 +1,15 @@
 import React from "react";
 import { render, RenderResult } from "@testing-library/react";
 
-import { IMember } from "store/reducers/clinical/types";
-import MemberNamesList from "./MemberList";
+import MOCK_MEMBERS from "mocks/members";
+import MemberList from "./MemberList";
 
-describe("MemberNamesList component", () => {
+describe("MemberList component", () => {
   let subject: RenderResult;
 
   describe("empty list", () => {
     beforeEach(() => {
-      subject = render(<MemberNamesList members={[]} />);
+      subject = render(<MemberList members={[]} />);
     });
     it("renders empty message for empty list", () => {
       expect(
@@ -19,37 +19,15 @@ describe("MemberNamesList component", () => {
   });
 
   describe("populated list", () => {
-    const MOCK_MEMBERS: IMember[] = [
-      {
-        name: { first: "Isaiah", last: "Williams" },
-        phone: "(115) 234-2625",
-        unreadMessageCount: 1,
-      },
-      {
-        name: { first: "Alana", last: "Zell" },
-        phone: "(555) 626-1651",
-        unreadMessageCount: 0,
-      },
-      {
-        name: { first: "Calvin", last: "Hobbes" },
-        phone: "(800) 537-2625",
-        unreadMessageCount: 3,
-      },
-    ];
-
     beforeEach(() => {
-      subject = render(<MemberNamesList members={MOCK_MEMBERS} />);
+      subject = render(<MemberList members={MOCK_MEMBERS} />);
     });
-    it.skip("renders the names of members", () => {
-      // TODO
-    });
-    it.skip("sorts names alphabetically by lastName, firstName", () => {
-      // TODO
+    it("renders the names of members", () => {
+      MOCK_MEMBERS.forEach(({ name: { first, last } }) => {
+        expect(subject.getByText(`${first} ${last}`)).toBeInTheDocument();
+      });
     });
     it.skip("displays an unread message count", () => {
-      // TODO
-    });
-    it.skip("filter option to show only members with unread msgs", () => {
       // TODO
     });
   });

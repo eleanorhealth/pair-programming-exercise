@@ -20,4 +20,5 @@ Feature #1 rendered the member names in the list.
 
 1. An `<UnreadMessageTag />` should display next to member name.
 2. The tag should indicate the number of unread messages.
+   - Field `messages` on `IMember` contains a list of messages, each with a boolean `read` flag.
 3. Users with zero unread messages should not have a tag.
