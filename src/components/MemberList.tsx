@@ -1,15 +1,15 @@
 import React from "react";
 import { List } from "antd";
 
-import { IMember } from "store/reducers/clinical/types";
+import { Member } from "types/member";
 
 interface IMemberNamesListProps {
-  members: IMember[];
+  members: Member[];
 }
 
 export default function MemberList({ members }: IMemberNamesListProps) {
   return (
-    <List<IMember>
+    <List<Member>
       dataSource={members}
       locale={{ emptyText: "No member records loaded." }}
       renderItem={({ name: { first, last } }) => (

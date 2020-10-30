@@ -12,12 +12,14 @@
 
 ## Existing Behavior
 
-Member records are pulled from an API (https://randomuser.me). They are stored in redux in the `clinical` leaf.
+Member records are pulled from an API (https://randomuser.me).
 
-Feature #1 rendered the member names in the list.
+Story #1 rendered the sorted member names in `MemberDataContainer`.
 
 ## Feature Requirements
 
 1. Group the members by the country where they live. This is based on the `location.country` field on the record.
-2. The groups should be displayed in alphabetical order by country.
-3. Each group should show a label of the country name.
+
+- _Note: The `Member` type is incomplete and needs this field added._
+
+2. Render each group in a separate list, below a header displaying the country name.

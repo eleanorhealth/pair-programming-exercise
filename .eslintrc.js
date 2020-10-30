@@ -9,8 +9,9 @@ module.exports = {
   },
   plugins: ["prettier", "react"],
   rules: {
-    "@typescript-eslint/quotes": ["error", "double"],
+    "@typescript-eslint/quotes": ["warn", "double"],
     "@typescript-eslint/semi": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
     "comma-dangle": [
       "warn",
       {

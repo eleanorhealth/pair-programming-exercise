@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 
-import { IMember } from "store/reducers/clinical/types";
+import { Member } from "types/member";
 
-const MOCK_MEMBERS: IMember[] = [
+const MOCK_MEMBERS: Member[] = [
   {
     name: { first: "Isaiah", last: "Williams" },
     phone: "(115) 234-2625",

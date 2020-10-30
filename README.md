@@ -3,7 +3,7 @@
 This project is written in React and TypeScript.
 
 - The component library used is [Ant Design](https://ant.design/components/overview/).
-- It has a redux store built with [Redux Toolkit](https://redux-toolkit.js.org/).
+- It manages data fetching with [react-query](https://react-query.tanstack.com/docs/overview). [Devtools](https://react-query.tanstack.com/docs/devtools) are enabled.
 - [ramda](https://ramdajs.com/docs/#) is installed for functional programming utilities.
 
 ## Background

@@ -26,7 +26,7 @@ export const StyledLeftNav = styled.div`
 
 export const MainLayout = styled(Layout)`
   min-height: 100vh;
-  padding: 0 ${getSpacing("lg")};
+  padding: ${getSpacing("sm")} ${getSpacing("lg")};
   .ant-layout-header {
     border-bottom: 1px solid ${getColor("border")};
     margin: ${getSpacing("lg")} 0;

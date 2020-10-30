@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import PageRouteContainer from "containers/PageRouteContainer";
+import PageRouteContainer from "components/PageRouteContainer";
 
 import { Page } from "pages/types";
 import { pick } from "ramda";

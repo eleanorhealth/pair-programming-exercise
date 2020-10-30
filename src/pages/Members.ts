@@ -1,6 +1,6 @@
 import { TeamOutlined } from "@ant-design/icons";
 
-import MemberDataContainer from "containers/MemberDataContainer";
+import MemberDataContainer from "components/MemberDataContainer";
 import { Page } from "./types";
 
 const MemberList: Page = {
