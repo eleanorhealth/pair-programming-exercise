@@ -21,11 +21,12 @@ describe("MemberDataContainer", () => {
     subject = render(<MemberDataContainer />, { wrapper: BaseWrapper });
   });
 
-  it.skip("renders the sorted names of members", () => {
+  it("renders the names of members", () => {
     const subjectText = subject.baseElement.textContent;
-    expect(subjectText).toContain(
-      "Calvin HobbesIsaiah WilliamsAlana ZellBeth Zell"
-    );
+    expect(subjectText).toContain("Calvin Hobbes");
+    expect(subjectText).toContain("Isaiah Williams");
+    expect(subjectText).toContain("Alana Zell");
+    expect(subjectText).toContain("Beth Zell");
   });
   it.skip("renders unread message count tags", () => {
     // TODO

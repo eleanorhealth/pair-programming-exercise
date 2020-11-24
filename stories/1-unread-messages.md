@@ -1,4 +1,4 @@
-# 2) Unread Message Tag
+# 1) Unread Message Tag
 
 ## User Story
 
@@ -18,6 +18,6 @@ Field `messages` on `Member` contains a list of messages, each with a boolean `r
 
 ## Feature Requirements
 
-1. An `<UnreadMessageTag />` should display to the right of each member name.
+1. An `<UnreadMessageTag />` should display to the right of each member name. This component exists already but is not rendered anywhere.
 2. The tag should indicate the number of unread messages.
 3. Users with zero unread messages should not have a tag.

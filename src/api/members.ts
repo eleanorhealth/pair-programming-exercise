@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import { COUNTRIES } from "app-constants";
+import sortMembers from "helpers/sortMembers";
 import { Member } from "types/member";
 import mockMessages from "../mocks/mockMessages";
 
@@ -11,11 +12,15 @@ export async function getMembers(): Promise<Member[]> {
   const body = await response.json();
   if (body) {
     const { results: members } = body;
-    return members.map((member: any) => ({
-      ...member,
-      // This field is mocked as random data.
-      messages: mockMessages(),
-    }));
+    const membersWithMockMessages = members.map(
+      (member: any) =>
+        ({
+          ...member,
+          // This field is mocked as random data.
+          messages: mockMessages(),
+        } as Member)
+    );
+    return sortMembers(membersWithMockMessages);
   }
   return [];
 }

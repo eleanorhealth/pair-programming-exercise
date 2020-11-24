@@ -4,7 +4,7 @@ import { RouteComponentProps } from "react-router-dom";
 
 import PageLayout from "pages/layouts/PageLayout";
 
-import useSetPageTitle from "helpers/hooks/useSetPageTitle";
+import useSetPageTitle from "hooks/useSetPageTitle";
 import { Page } from "pages/types";
 
 interface IPageTitleWrapperProps<T> {
