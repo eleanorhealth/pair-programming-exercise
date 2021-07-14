@@ -1,4 +1,4 @@
-# 2) BUG: Sorting
+# 3) BUG: Sorting
 
 ## Existing Behavior
 
@@ -8,4 +8,4 @@
 ## Feature Requirements
 
 1. When displaying the list of members, they should be sorted alphabetically ascending by last name then first name. (eg "Victor Melo" then "Abigail Miller" then "Brandon Miller")
-2. Update `sortMembers.ts` to implement this.
+2. Update [`sortMembers.ts`](../src/helpers/sortMembers.ts) to implement this.

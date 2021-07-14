@@ -2,7 +2,7 @@
 
 This project is written in React and TypeScript.
 
-- The component library used is [Chakra UI](https://chakra-ui.com/docs/getting-started).
+- The component library used is [Chakra UI](https://chakra-ui.com/docs/getting-started). `styled-components` package is also installed if preferred.
 - It manages data fetching with [react-query](https://react-query.tanstack.com/docs/overview). [Devtools](https://react-query.tanstack.com/docs/devtools) are enabled.
 - [ramda](https://ramdajs.com/docs/#) is installed for functional programming utilities.
 
