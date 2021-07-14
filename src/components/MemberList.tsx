@@ -8,13 +8,11 @@ interface IMemberNamesListProps {
 }
 
 export default function MemberList({ members }: IMemberNamesListProps) {
-  const memberContent = members.map(
-    ({ id: { value: idValue }, name: { first, last } }) => (
-      <HStack key={idValue}>
-        <Text>{`${first} ${last}`}</Text>
-      </HStack>
-    )
-  );
+  const memberContent = members.map(({ name: { first, last } }) => (
+    <HStack key={`${first}-${last}`}>
+      <Text>{`${first} ${last}`}</Text>
+    </HStack>
+  ));
 
   return (
     <VStack alignItems="flex-start" gridGap={3}>
