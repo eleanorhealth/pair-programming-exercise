@@ -1,5 +1,5 @@
 import React from "react";
-import { HStack, Text, VStack } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 import { Member } from "types/member";
 
@@ -9,18 +9,18 @@ interface IMemberNamesListProps {
 
 export default function MemberList({ members }: IMemberNamesListProps) {
   const memberContent = members.map(({ name: { first, last } }) => (
-    <HStack key={`${first}-${last}`}>
+    <Flex key={`${first}-${last}`} direction="row">
       <Text>{`${first} ${last}`}</Text>
-    </HStack>
+    </Flex>
   ));
 
   return (
-    <VStack alignItems="flex-start" gridGap={3}>
+    <Flex alignItems="flex-start" direction="column" gridGap={3}>
       {memberContent.length === 0 ? (
         <Text>No member records loaded.</Text>
       ) : (
         memberContent
       )}
-    </VStack>
+    </Flex>
   );
 }
