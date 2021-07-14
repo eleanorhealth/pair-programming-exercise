@@ -1,26 +1,26 @@
+import { Alert, Box, Spinner } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
-import { Alert, Spin } from "antd";
 
 import MemberList from "components/MemberList";
 
 import useGetMembers from "hooks/useGetMembers";
-
-import { StyledCard } from "./styles";
 
 export default function MemberDataContainer() {
   const { data: members, isError, isFetched, isLoading } = useGetMembers();
 
   let statusMessage: ReactNode;
   if (isLoading) {
-    statusMessage = <Spin />;
+    statusMessage = <Spinner />;
   } else if (isError) {
-    statusMessage = <Alert message="There was an error loading members." />;
+    statusMessage = (
+      <Alert status="warning">There was an error loading members.</Alert>
+    );
   }
 
   return (
-    <StyledCard>
+    <Box maxWidth="45rem">
       {statusMessage}
       {isFetched && <MemberList members={members || []} />}
-    </StyledCard>
+    </Box>
   );
 }

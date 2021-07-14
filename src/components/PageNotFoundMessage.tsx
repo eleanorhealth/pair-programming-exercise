@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import PageLink from "components/PageLink";
 import Home from "pages/Home";
 
 export default function PageNotFoundMessage() {
@@ -19,7 +19,7 @@ export default function PageNotFoundMessage() {
       </ul>
       <p>
         You can return to the Home page by clicking{" "}
-        <PageLink page={Home}>here</PageLink>.
+        <Link to={Home.navPath}>here</Link>.
       </p>
     </section>
   );

@@ -1,10 +1,9 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import React, { useState, ReactText } from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { ReactQueryDevtools } from "react-query-devtools";
-import { ThemeProvider } from "styled-components";
 
-import "./App.less";
 import { APP_NAME, ELEANOR } from "app-constants";
 import PageTitleContext from "helpers/context/PageTitleContext";
 import Pages from "pages";
@@ -18,14 +17,18 @@ function App() {
     <>
       <Helmet>
         <title>{`${pageTitle} - ${ELEANOR}`}</title>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto"
+        />
       </Helmet>
-      <ThemeProvider theme={THEME}>
+      <ChakraProvider theme={THEME}>
         <PageTitleContext.Provider value={pageTitleState}>
           <Router>
             <Switch>{Pages}</Switch>
           </Router>
         </PageTitleContext.Provider>
-      </ThemeProvider>
+      </ChakraProvider>
       <ReactQueryDevtools position="bottom-right" />
     </>
   );
