@@ -8,7 +8,6 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@testing-library/jest-dom": "^4.2.4",
-    "add": "^2.0.6",
     "framer-motion": "^4",
     "jest-styled-components": "^7.0.2",
     "ramda": "^0.27.0",
