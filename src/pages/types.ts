@@ -11,7 +11,6 @@ export type Page<T = void> = Pick<
   component: ComponentType<RouteComponentProps<T>>;
   // Will default to PageLayout
   layout?: ComponentType<IPageLayoutProps>;
-  navIcon?: ComponentType;
   // RouteProps["path"] is type string | string[] | undefined
   // add a new required field `navPath` of type string,
   // which will be used for menu items and Links

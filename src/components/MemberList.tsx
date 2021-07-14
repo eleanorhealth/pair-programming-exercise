@@ -1,5 +1,5 @@
 import React from "react";
-import { List } from "antd";
+import { HStack, Text, VStack } from "@chakra-ui/react";
 
 import { Member } from "types/member";
 
@@ -8,13 +8,21 @@ interface IMemberNamesListProps {
 }
 
 export default function MemberList({ members }: IMemberNamesListProps) {
+  const memberContent = members.map(
+    ({ id: { value: idValue }, name: { first, last } }) => (
+      <HStack key={idValue}>
+        <Text>{`${first} ${last}`}</Text>
+      </HStack>
+    )
+  );
+
   return (
-    <List<Member>
-      dataSource={members}
-      locale={{ emptyText: "No member records loaded." }}
-      renderItem={({ name: { first, last } }) => (
-        <List.Item>{`${first} ${last}`}</List.Item>
+    <VStack alignItems="flex-start" gridGap={3}>
+      {memberContent.length === 0 ? (
+        <Text>No member records loaded.</Text>
+      ) : (
+        memberContent
       )}
-    />
+    </VStack>
   );
 }

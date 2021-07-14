@@ -1,38 +1,26 @@
+import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { Layout } from "antd";
 
-import Menu from "components/Menu";
-import PageHeader from "components/PageHeader";
 import ErrorBoundary from "components/ErrorBoundary";
 
 import { ELEANOR } from "app-constants";
 import EleanorLogo from "assets/images/eleanor-logo.png";
 import { IPageLayoutProps } from "pages/types";
-import { StyledLeftNav, MainLayout, StyledImg } from "./styles";
-
-const { Header, Content } = Layout;
 
 export default function PageLayout({ children, title }: IPageLayoutProps) {
-  const leftNavContent = (
-    <StyledLeftNav>
-      <StyledImg src={EleanorLogo} alt={ELEANOR} />
-      <Menu />
-    </StyledLeftNav>
-  );
-
-  const leftNav = <Layout.Sider>{leftNavContent}</Layout.Sider>;
-
   return (
-    <Layout>
-      {leftNav}
-      <MainLayout>
-        <Header>
-          <PageHeader title={title} />
-        </Header>
-        <Content>
-          <ErrorBoundary>{children}</ErrorBoundary>
-        </Content>
-      </MainLayout>
-    </Layout>
+    <Box as="main" padding={8}>
+      <HStack
+        borderBottom="1px solid rgb(228, 236, 246)"
+        fontSize="xl"
+        gridGap={2}
+        paddingBottom={3}
+        marginBottom={5}
+      >
+        <Image width="3rem" src={EleanorLogo} alt={ELEANOR} />
+        <Text>{`${ELEANOR} - ${title}`}</Text>
+      </HStack>
+      <ErrorBoundary>{children}</ErrorBoundary>
+    </Box>
   );
 }

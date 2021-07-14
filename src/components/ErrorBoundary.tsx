@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/indent */
 import React, { ReactNode } from "react";
-import { Result } from "antd";
+import { Alert, AlertIcon } from "@chakra-ui/react";
 
 interface IErrorBoundaryProps {
   children: ReactNode;
@@ -29,10 +29,10 @@ export default class ErrorBoundary extends React.Component<
       return <>{children}</>;
     }
     return (
-      <Result
-        status="warning"
-        title="There was an error processing your request."
-      />
+      <Alert status="error">
+        <AlertIcon />
+        There was an error processing your request.
+      </Alert>
     );
   }
 }
