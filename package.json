@@ -55,6 +55,7 @@
   "scripts": {
     "start": "craco start",
     "test": "craco test",
+    "typeCheck": "tsc --noEmit",
     "build": "craco build",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
