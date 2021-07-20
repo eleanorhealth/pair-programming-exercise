@@ -3,7 +3,7 @@ import { render, RenderResult } from "@testing-library/react";
 
 import MOCK_MEMBERS from "mocks/members";
 import { BaseWrapper } from "test-utils";
-import MemberDataContainer from ".";
+import MemberDataContainer from "./MemberDataContainer";
 
 jest.mock("react-query", () => ({
   __esModule: true,
@@ -31,7 +31,7 @@ describe("MemberDataContainer", () => {
   it.skip("renders unread message count tags", () => {
     // TODO
   });
-  it.skip("renders member country groups", () => {
+  it.skip("renders member avatar images", () => {
     // TODO
   });
 });

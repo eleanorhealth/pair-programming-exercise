@@ -1,7 +1,7 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-import ErrorBoundary from "components/ErrorBoundary";
+import ErrorBoundary from "pages/utility/ErrorBoundary";
 
 import { ELEANOR } from "app-constants";
 import EleanorLogo from "assets/images/eleanor-logo.png";

@@ -23,7 +23,7 @@ module.exports = {
       },
     ],
     "react/jsx-props-no-spreading": [
-      "error",
+      "warn",
       { html: "enforce", custom: "ignore" },
     ],
     "react/require-default-props": 0,
