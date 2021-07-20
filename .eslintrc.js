@@ -1,8 +1,7 @@
 module.exports = {
   extends: [
     "airbnb-typescript",
-    "plugin:prettier/recommended",
-    "prettier/react",
+    "prettier",
   ],
   parserOptions: {
     project: "./tsconfig.json",
