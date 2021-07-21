@@ -18,4 +18,4 @@ Field `messages` on `Member` contains a list of messages, each with a boolean `r
 
 ## Feature Requirements
 
-1. Method `countUnreadMessages` always returns -1. Implement logic so that it returns a number indicating how many messages are unread.
+1. Implement logic in `countUnreadMessages` so that it returns a number indicating how many messages are unread.
