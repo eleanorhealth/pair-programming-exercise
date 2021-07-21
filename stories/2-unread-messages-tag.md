@@ -14,7 +14,7 @@
 
 Member records are pulled from an API (https://randomuser.me).
 
-Field `messages` on `Member` contains a list of messages, each with a boolean `read` flag.
+Story #1 implemented a `countUnreadMessages` function.
 
 ## Feature Requirements
 

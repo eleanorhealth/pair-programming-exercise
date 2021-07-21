@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/consistent-type-assertions */
 import { v4 as uuidv4 } from "uuid";
 
-/* eslint-disable import/prefer-default-export */
 import { COUNTRIES } from "app-constants";
 import sortMembers from "helpers/sortMembers";
 import { Member } from "types/member";
