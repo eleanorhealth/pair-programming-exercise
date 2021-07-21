@@ -4,7 +4,7 @@ import { RouteComponentProps, RouteProps } from "react-router-dom";
 
 // A Page is mostly a Route, with the addition of a "title" field.
 // It is generic where `T` is the route parameters.
-export type Page<T = void> = Pick<
+export type Page<T = any> = Pick<
   RouteProps,
   "exact" | "location" | "sensitive" | "strict"
 > & {

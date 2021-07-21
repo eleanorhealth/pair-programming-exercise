@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/strict-boolean-expressions */
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
 import { v4 as uuidv4 } from "uuid";
 
 /* eslint-disable import/prefer-default-export */

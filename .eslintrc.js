@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "airbnb-typescript",
+    "standard-with-typescript",
     "prettier",
   ],
   parserOptions: {
@@ -8,8 +8,10 @@ module.exports = {
   },
   plugins: ["prettier", "react"],
   rules: {
+    "@typescript-eslint/semi": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/consistent-type-definitions": 0,
     "@typescript-eslint/quotes": ["warn", "double"],
-    "@typescript-eslint/semi": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
     "comma-dangle": [
       "warn",
