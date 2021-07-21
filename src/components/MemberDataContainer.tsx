@@ -18,7 +18,7 @@ export default function MemberDataContainer() {
   }
 
   return (
-    <Box maxWidth="45rem">
+    <Box padding={6} boxShadow="lg" bg="white" maxW="40rem">
       {statusMessage}
       {isFetched && <MemberList members={members || []} />}
     </Box>

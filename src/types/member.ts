@@ -1,5 +1,6 @@
 // TODO - This type is incomplete
 export type Member = {
+  id: string;
   name: {
     first: string;
     last: string;

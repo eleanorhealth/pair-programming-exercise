@@ -20,6 +20,6 @@ Story #1 rendered the sorted member names in `MemberDataContainer`.
 
 1. In `MemberList`, render an [Avatar](https://chakra-ui.com/docs/media-and-icons/avatar) to the left of each member's name.
 2. Member data returned by the API already includes picture data. Check the network response to determine the shape of the response body.
-3. Update the styling so that the three elements line up into columns. The member name column should be 20rem wide, see design below.
+3. Update the styling so that the three elements line up into columns. The member name column should expand to fill space in the row, see design below.
 
 ![Member List](./memberList.jpg)
