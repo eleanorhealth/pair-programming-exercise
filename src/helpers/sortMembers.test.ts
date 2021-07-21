@@ -11,7 +11,7 @@ describe("sort members", () => {
     const sorted = sortMembers([isaiahWilliams, alanaZell, calvinHobbes]);
     expect(sorted).toEqual([calvinHobbes, isaiahWilliams, alanaZell]);
   });
-  it.skip("sorts by last name then first name, ascending", () => {
+  it("sorts by last name then first name, ascending", () => {
     // TODO - Sort function is buggy, does not sort by first name
     const sorted = sortMembers([
       bethZell,

@@ -1,4 +1,4 @@
-# 1) Count Unread Messages
+# 2) Unread Messages Tag
 
 ## User Story
 
@@ -18,4 +18,6 @@ Field `messages` on `Member` contains a list of messages, each with a boolean `r
 
 ## Feature Requirements
 
-1. Method `countUnreadMessages` always returns -1. Implement logic so that it returns a number indicating how many messages are unread.
+1. An `<UnreadMessageTag />` should display to the right of each member name. This component is already written, but is not yet rendered anywhere.
+2. The tag should indicate the number of unread messages.
+3. Users with zero unread messages should not have a tag.

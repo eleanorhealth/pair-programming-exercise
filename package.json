@@ -9,7 +9,6 @@
     "@emotion/styled": "^11",
     "framer-motion": "^4",
     "jest-styled-components": "^7.0.2",
-    "ramda": "^0.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
