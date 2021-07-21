@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Placeholder() {
   return (
-    <Box padding="6" boxShadow="lg" bg="white">
+    <Box padding={6} boxShadow="lg" bg="white" maxW="40rem">
       Welcome! To get started, go to the <Link to="/members">members list</Link>
       .
     </Box>

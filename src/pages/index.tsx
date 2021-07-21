@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { Route, Redirect } from "react-router-dom";
 
-import pageToRoute from "helpers/page/pageToRoute";
+import pageToRoute from "pages/utility/pageToRoute";
 
 import Home from "pages/Home";
 import Members from "pages/Members";

@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/strict-boolean-expressions */
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
+import { v4 as uuidv4 } from "uuid";
+
 /* eslint-disable import/prefer-default-export */
 import { COUNTRIES } from "app-constants";
 import sortMembers from "helpers/sortMembers";
@@ -16,6 +20,7 @@ export async function getMembers(): Promise<Member[]> {
       (member: any) =>
         ({
           ...member,
+          id: uuidv4(),
           // This field is mocked as random data.
           messages: mockMessages(),
         } as Member)

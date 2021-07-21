@@ -1,4 +1,4 @@
-import Placeholder from "components/Placeholder";
+import Placeholder from "pages/utility/Placeholder";
 import { Page } from "./types";
 
 const Home: Page = {

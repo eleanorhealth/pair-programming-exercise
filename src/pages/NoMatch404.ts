@@ -1,4 +1,4 @@
-import PageNotFoundMessage from "components/PageNotFoundMessage";
+import PageNotFoundMessage from "pages/utility/PageNotFoundMessage";
 import { Page } from "./types";
 
 const NoMatch404: Page = {
