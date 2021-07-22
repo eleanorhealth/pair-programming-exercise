@@ -5,6 +5,7 @@ This project is written in React and TypeScript.
 - The component library used is [Chakra UI](https://chakra-ui.com/docs/getting-started).
   - [styled-components](https://styled-components.com/docs) package is also installed if preferred.
 - It manages data fetching with [react-query](https://react-query.tanstack.com/docs/overview). [Devtools](https://react-query.tanstack.com/docs/devtools) are enabled.
+- [Jest](https://jestjs.io/docs/getting-started) is used as the test runner with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 
 ## Background
 
