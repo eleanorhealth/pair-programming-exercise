@@ -28,10 +28,6 @@ describe("MemberDataContainer", () => {
     expect(subjectText).toContain("Alana Zell");
     expect(subjectText).toContain("Beth Zell");
   });
-  it.skip("renders unread message count tags", () => {
-    // TODO
-  });
-  it.skip("renders member avatar images", () => {
-    // TODO
-  });
+  it.todo("renders unread message count tags");
+  it.todo("renders member avatar images");
 });

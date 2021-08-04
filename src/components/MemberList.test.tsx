@@ -27,8 +27,6 @@ describe("MemberList component", () => {
         expect(subject.getByText(`${first} ${last}`)).toBeInTheDocument();
       });
     });
-    it.skip("displays an unread message count", () => {
-      // TODO
-    });
+    it.todo("displays an unread message count");
   });
 });
