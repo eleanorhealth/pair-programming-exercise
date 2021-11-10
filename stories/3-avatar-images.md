@@ -3,9 +3,9 @@
 ## User Story
 
 > As an Eleanor Health clinical staff person,
-
+ 
 > When I am viewing my Member List,
-
+ 
 > I want to be able to see each member's photo,
 
 > So that I can recognize them during in-clinic visits.
@@ -22,4 +22,4 @@ Story #2 rendered the sorted member names and UnreadMessageTag elements in `Memb
 2. Member data returned by the API already includes picture data. Check the network response to determine the shape of the response body.
 3. Update the styling so that the three elements line up into columns. The member name column should expand to fill space in the row, see design below.
 
-![Member List](./memberList.jpg)
+![Member List](./memberList.png)

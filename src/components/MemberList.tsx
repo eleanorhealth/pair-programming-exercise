@@ -16,7 +16,7 @@ export default function MemberList({ members }: IMemberNamesListProps) {
 
   return (
     <Flex direction="column" gridGap={3}>
-      {memberContent.length === 0 ? (
+      {members.length === 0 ? (
         <Text>No member records loaded.</Text>
       ) : (
         memberContent
