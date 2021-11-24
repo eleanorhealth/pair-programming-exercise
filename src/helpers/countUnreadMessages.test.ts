@@ -1,7 +1,7 @@
 import { bethZell, calvinHobbes, isaiahWilliams } from "mocks/members";
 import { countUnreadMessages } from "./countUnreadMessages";
 
-describe.skip("countUnreadMessages", () => {
+describe("countUnreadMessages", () => {
   it("counts read: false", () => {
     expect(countUnreadMessages(isaiahWilliams.messages)).toEqual(1);
   });
