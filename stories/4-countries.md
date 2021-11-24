@@ -12,7 +12,7 @@
 
 ## Existing Behavior
 
-Each member from the API has an associated country.
+Each member from the API has an associated country (use location: country rather than nat).
 
 ## Feature Requirements
 

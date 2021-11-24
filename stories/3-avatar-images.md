@@ -14,7 +14,7 @@
 
 Member records are pulled from an API (https://randomuser.me).
 
-Story #2 rendered the sorted member names and UnreadMessageTag elements in `MemberDataContainer`.
+Story #2 rendered the member names and UnreadMessageTag elements in `MemberDataContainer`.
 
 ## Feature Requirements
 
