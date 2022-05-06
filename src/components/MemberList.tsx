@@ -3,11 +3,11 @@ import { Flex, Grid, Text } from "@chakra-ui/react";
 
 import { Member } from "types/member";
 
-interface IMemberNamesListProps {
+interface Props {
   members: Member[];
 }
 
-export default function MemberList({ members }: IMemberNamesListProps) {
+export default function MemberList({ members }: Props) {
   const memberContent = members.map(({ id, name: { first, last } }) => (
     <Grid key={id}>
       <Text key={id}>{`${first} ${last}`}</Text>

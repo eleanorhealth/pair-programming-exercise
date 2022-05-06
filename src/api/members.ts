@@ -3,7 +3,7 @@
 import { v4 as uuidv4 } from "uuid";
 
 import { COUNTRIES } from "app-constants";
-import sortMembers from "helpers/sortMembers";
+import sortMembersByName from "helpers/sortMembersByName";
 import { Member } from "types/member";
 import mockMessages from "../mocks/mockMessages";
 
@@ -24,7 +24,7 @@ export async function getMembers(): Promise<Member[]> {
           messages: mockMessages(),
         } as Member)
     );
-    return sortMembers(membersWithMockMessages);
+    return sortMembersByName(membersWithMockMessages);
   }
   return [];
 }
