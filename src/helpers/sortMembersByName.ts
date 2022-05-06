@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { Member } from "types/member";
 
-const sortMembers = (members: Member[]): Member[] =>
+const sortMembersByName = (members: Member[]): Member[] =>
   members.sort(
     (a, b) =>
       a.name.last.localeCompare(b.name.last, "en", {
@@ -12,4 +12,4 @@ const sortMembers = (members: Member[]): Member[] =>
       })
   );
 
-export default sortMembers;
+export default sortMembersByName;

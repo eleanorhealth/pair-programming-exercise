@@ -19,3 +19,5 @@ Field `messages` on `Member` contains a list of messages, each with a boolean `r
 ## Feature Requirements
 
 1. Implement logic in `countUnreadMessages` so that it returns a number indicating how many messages are unread.
+2. Ensure the corresponding `countUnreadMessages` tests pass.   
+No UI change is necessary for this story.

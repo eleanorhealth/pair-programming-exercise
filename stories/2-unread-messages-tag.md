@@ -18,7 +18,7 @@ Story #1 implemented a `countUnreadMessages` function.
 
 ## Feature Requirements
 
-1. An `<UnreadMessageTag />` should display near each member name. This component is already written, but is not yet rendered anywhere.
+1. An `<UnreadMessageTag />` should display near each member name. This component already exists, but is not yet rendered anywhere.
 2. The tag should indicate the number of unread messages, example: "2 Unread Messages"
 3. Don't worry about styling for this story.
 4. Users with zero unread messages should not have a tag.

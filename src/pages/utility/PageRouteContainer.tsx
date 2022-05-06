@@ -6,7 +6,7 @@ import PageLayout from "pages/layouts/PageLayout";
 import useSetPageTitle from "hooks/useSetPageTitle";
 import { Page } from "pages/types";
 
-interface IPageTitleWrapperProps {
+interface Props {
   component: Page["component"];
   title: Page["title"];
 }
@@ -14,7 +14,7 @@ interface IPageTitleWrapperProps {
 export default function PageRouteContainer({
   component: Component,
   title,
-}: IPageTitleWrapperProps) {
+}: Props) {
   useSetPageTitle(title);
 
   return (
