@@ -18,7 +18,7 @@
     "yarn": "^1.22.10"
   },
   "devDependencies": {
-    "@craco/craco": "6.2.0",
+    "@craco/craco": "6.4.5",
     "@testing-library/dom": "^8.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -41,7 +41,7 @@
     "eslint-plugin-node": "11",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "4",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
