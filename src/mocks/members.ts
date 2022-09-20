@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
-
 import { Member } from "types/member";
 
 export const isaiahWilliams = {
@@ -8,7 +6,7 @@ export const isaiahWilliams = {
   phone: "(115) 234-2625",
   messages: [
     {
-      id: uuidv4(),
+      id: "b0fc5dc8-2ff6-4a92-b91f-88ed396a791b",
       read: false,
     },
   ],
@@ -31,15 +29,15 @@ export const calvinHobbes = {
   phone: "(800) 537-2625",
   messages: [
     {
-      id: uuidv4(),
+      id: "37462ed6-bfa0-4b1b-9a1d-c6c3575b1656",
       read: false,
     },
     {
-      id: uuidv4(),
+      id: "e1e2b8fd-4863-4b9e-b506-2ed2535d7b1b",
       read: true,
     },
     {
-      id: uuidv4(),
+      id: "f1624a37-8429-4be4-be23-0b078b87fa51",
       read: false,
     },
   ],

@@ -5,6 +5,6 @@ export const COUNTRIES: Record<string, string> = {
   au: "Australia",
   br: "Brazil",
   ca: "Canada",
-  es: "Span",
+  es: "Spain",
   us: "United States",
 };
