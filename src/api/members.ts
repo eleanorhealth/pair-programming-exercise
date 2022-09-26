@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 /* eslint-disable @typescript-eslint/consistent-type-assertions */
-import { v4 as uuidv4 } from "uuid";
-
 import { COUNTRIES } from "app-constants";
+import { v4 as uuidv4 } from "uuid";
 import sortMembersByName from "helpers/sortMembersByName";
 import { Member } from "types/member";
 import mockMessages from "../mocks/mockMessages";

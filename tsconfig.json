@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -21,6 +21,7 @@
     "jsx": "react",
     "noFallthroughCasesInSwitch": true
   },
+  "references": [{ "path": "./tsconfig.node.json" }],
   "include": [
     "src",
   ]

@@ -1,30 +1,26 @@
 import React from "react";
-import { render, RenderResult } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import MOCK_MEMBERS from "mocks/members";
 import MemberList from "./MemberList";
 
 describe("MemberList component", () => {
-  let subject: RenderResult;
-
   describe("empty list", () => {
     beforeEach(() => {
-      subject = render(<MemberList members={[]} />);
+      render(<MemberList members={[]} />);
     });
     it("renders empty message for empty list", () => {
-      expect(
-        subject.getByText("No member records loaded.")
-      ).toBeInTheDocument();
+      screen.getByText("No member records loaded.");
     });
   });
 
   describe("populated list", () => {
     beforeEach(() => {
-      subject = render(<MemberList members={MOCK_MEMBERS} />);
+      render(<MemberList members={MOCK_MEMBERS} />);
     });
     it("renders the names of members", () => {
       MOCK_MEMBERS.forEach(({ name: { first, last } }) => {
-        expect(subject.getByText(`${first} ${last}`)).toBeInTheDocument();
+        screen.getByText(`${first} ${last}`);
       });
     });
     it.todo("displays an unread message count");

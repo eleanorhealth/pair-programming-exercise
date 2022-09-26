@@ -1,5 +1,5 @@
 import React from "react";
-import { render, RenderResult } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import MOCK_MEMBERS from "mocks/members";
 import { BaseWrapper } from "test-utils";
@@ -16,17 +16,15 @@ jest.mock("react-query", () => ({
 }));
 
 describe("MemberDataContainer", () => {
-  let subject: RenderResult;
   beforeEach(() => {
-    subject = render(<MemberDataContainer />, { wrapper: BaseWrapper });
+    render(<MemberDataContainer />, { wrapper: BaseWrapper });
   });
 
   it("renders the names of members", () => {
-    const subjectText = subject.baseElement.textContent;
-    expect(subjectText).toContain("Calvin Hobbes");
-    expect(subjectText).toContain("Isaiah Williams");
-    expect(subjectText).toContain("Alana Zell");
-    expect(subjectText).toContain("Beth Zell");
+    screen.getByText("Calvin Hobbes");
+    screen.getByText("Isaiah Williams");
+    screen.getByText("Alana Zell");
+    screen.getByText("Beth Zell");
   });
   it.todo("renders unread message count tags");
   it.todo("renders member avatar images");
