@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "standard-with-typescript",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -13,6 +13,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-definitions": 0,
     "@typescript-eslint/quotes": ["warn", "double"],
     "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
     "comma-dangle": [
       "warn",
       {

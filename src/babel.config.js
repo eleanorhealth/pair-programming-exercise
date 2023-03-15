@@ -1,4 +1,3 @@
-/* eslint-disable import/no-default-export */
 const plugins = [];
 const presets = [];
 
