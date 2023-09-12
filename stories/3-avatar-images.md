@@ -12,14 +12,11 @@
 
 ## Existing Behavior
 
-Member records are pulled from an API (https://randomuser.me).
-
-Story #2 rendered the member names and UnreadMessageTag elements in `MemberDataContainer`.
+The member records pulled from the API already include picture data. Check the network response to determine the shape of the response body.
 
 ## Feature Requirements
 
 1. In `MemberList`, render a Chakra [Avatar](https://chakra-ui.com/docs/media-and-icons/avatar) to the left of each member's name.
-2. Member data returned by the API already includes picture data. Check the network response to determine the shape of the response body.
-3. Update the styling so that the three elements line up into columns. The member name column should expand to fill space in the row, see design below.
+2. Update the styling so that the three elements line up into columns. The member name column should expand to fill space in the row, see design below.
 
 ![Member List](./memberList.png)
