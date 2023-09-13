@@ -1,6 +1,6 @@
 # 2) Unread Messages Tag
 
-## User Story
+## User Story (same as Story 1)
 
 > As an Eleanor Health clinical staff person,
 
@@ -12,9 +12,9 @@
 
 ## Existing Behavior
 
-Member records are pulled from an API (https://randomuser.me).
+Member records are pulled from an API (https://randomuser.me), and displayed in rows in the app.
 
-Story #1 implemented a `countUnreadMessages` function.
+Story #1 implemented `countUnreadMessages`.
 
 ## Feature Requirements
 
