@@ -29,5 +29,4 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.
 
-Tests are written with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro). 
-
+Tests are written with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro).
