@@ -1,5 +1,5 @@
 import { bethZell, calvinHobbes, isaiahWilliams } from "mocks/members";
-import { countUnreadMessages } from "./countUnreadMessages";
+import { countUnreadMessages } from "../components/UnreadMessageTag";
 
 describe("countUnreadMessages", () => {
   it("counts read: false", () => {
