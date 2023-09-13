@@ -1,4 +1,4 @@
-# 4) Country Grouping
+# 3) Country Grouping
 
 ## User Story
 
