@@ -1,4 +1,4 @@
-# 2) Avatar Images
+# 3) Avatar Images
 
 ## User Story
 

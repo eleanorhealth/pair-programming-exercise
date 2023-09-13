@@ -1,4 +1,6 @@
-# 1) Unread Messages Tag
+# 2) Unread Messages Tag
+
+## User Story (same as Story 1)
 
 > As an Eleanor Health clinical staff person,
 
@@ -12,7 +14,7 @@
 
 Member records are pulled from an API (https://randomuser.me), and displayed in rows in the app.
 
-`countUnreadMessages` exists as a function in the UnreadMessageTag component but isn't used yet.
+Story #1 implemented `countUnreadMessages`.
 
 ## Feature Requirements
 
